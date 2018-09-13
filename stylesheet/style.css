@@ -1,0 +1,179 @@
+body {
+    background-color: #ebe4db;
+    /* background-color: #ff3459; */
+}
+
+h1 {
+    color: #00004c;
+    /* color: #1e241d; */
+    margin-top: 10%;
+    /* padding: 25px, 35px, 25px, 35px; */
+    text-align: center;
+    /* font-family: Merriweather; */
+    font-family: Montserrat;
+    font-size: 5em;
+}
+
+
+.main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    width: 35%;
+    border-radius: 10%;
+    /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22); */
+}
+
+.main-img:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+}
+
+h5 {
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 2%;
+    color: #00004c
+}
+
+
+
+div:hover {
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+}
+
+div:hover:before,
+div:hover:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #FDA8CF;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+}
+
+div:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+    0% {
+        top: -5px;
+        left: 0;
+    }
+
+    12% {
+        top: -2px;
+        left: 2px;
+    }
+
+    25% {
+        top: 0;
+        left: 5px;
+    }
+
+    37% {
+        top: 2px;
+        left: 2px;
+    }
+
+    50% {
+        top: 5px;
+        left: 0;
+    }
+
+    62% {
+        top: 2px;
+        left: -2px;
+    }
+
+    75% {
+        top: 0;
+        left: -5px;
+    }
+
+    87% {
+        top: -2px;
+        left: -2px;
+    }
+
+    100% {
+        top: -5px;
+        left: 0;
+    }
+}
+
+@keyframes counterclockwise {
+    0% {
+        top: -5px;
+        right: 0;
+    }
+
+    12% {
+        top: -2px;
+        right: 2px;
+    }
+
+    25% {
+        top: 0;
+        right: 5px;
+    }
+
+    37% {
+        top: 2px;
+        right: 2px;
+    }
+
+    50% {
+        top: 5px;
+        right: 0;
+    }
+
+    62% {
+        top: 2px;
+        right: -2px;
+    }
+
+    75% {
+        top: 0;
+        right: -5px;
+    }
+
+    87% {
+        top: -2px;
+        right: -2px;
+    }
+
+    100% {
+        top: -5px;
+        right: 0;
+    }
+}
+
+p {
+    padding-top: 5%;
+    font-family: Merriweather;
+    line-height: 200%;
+}
+
+p::first-letter {
+    font-size: 50px;
+
+}
+
+.end {
+    text-align: center;
+    padding-top: 10%;
+    font-family: Montserrat
+}
+
+
+#miss {
+    padding-top: 4%;
+}
